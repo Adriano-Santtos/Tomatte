@@ -1,56 +1,103 @@
-<h1 align="center">
-    <img src="public/logo-full.svg">
-</h1>
-
-<h1>
-    <img src="public/app.gif">
-</h1>
+<div align="center" id="top"> 
+  <img src="public/logo-full.svg" />
+  
 
 
+  &#xa0;
+  ---
 
+
+-
+  <!--<a href="https://moveit-next.netlify.app">Demo</a> -->
+  
+</div> 
+<h1 align="center">Moveit-next</h1>
 
 <p align="center">
-  <a href="#-projeto">About</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#rocket-tecnologias">Technologies</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#rocket-executando">Running</a>&nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;
-  <a href="link do site">Demo</a>&nbsp;&nbsp;&nbsp;
-  
+  <img alt="Github top language" src="https://img.shields.io/github/languages/top/Adriano-Santtos/moveit-next?color=56BEB8">
+
+  <img alt="Github language count" src="https://img.shields.io/github/languages/count/Adriano-Santtos/moveit-next?color=56BEB8">
+
+  <img alt="Repository size" src="https://img.shields.io/github/repo-size/Adriano-Santtos/moveit-next?color=56BEB8">
+
+  <img alt="License" src="https://img.shields.io/github/license/Adriano-Santtos/moveit-next?color=56BEB8">
+
+  <!-- <img alt="Github issues" src="https://img.shields.io/github/issues/Adriano-Santtos/moveit-next?color=56BEB8" /> -->
+
+  <!-- <img alt="Github forks" src="https://img.shields.io/github/forks/Adriano-Santtos/moveit-next?color=56BEB8" /> -->
+
+  <!-- <img alt="Github stars" src="https://img.shields.io/github/stars/Adriano-Santtos/moveit-next?color=56BEB8" /> -->
 </p>
 
----
 
-## 🔖&nbsp; About
 
-loreen
+ <h4 align="center"> 
+	🚧  Moveit-next 🚀 Under construction...  🚧
+</h4> 
 
----
+<hr> 
 
-## 🚀 Technologies used
+<p align="center">
+  <a href="#dart-about">About</a> &#xa0; | &#xa0; 
+  <a href="#sparkles-features">Features</a> &#xa0; | &#xa0;
+  <a href="#rocket-technologies">Technologies</a> &#xa0; | &#xa0;
+  <a href="#white_check_mark-requirements">Requirements</a> &#xa0; | &#xa0;
+  <a href="#checkered_flag-starting">Starting</a> &#xa0; | &#xa0;
+  <a href="#memo-license">License</a> &#xa0; | &#xa0;
+  <a href="https://github.com/Adriano-Santtos" target="_blank">Author</a>
+</p>
 
-The project was developed using the following technologies:
+<br>
 
-- [ReactJS](https://reactjs.org)
-- [Redux](https://redux.org)
-- [Axios](https://github.com/axios/axios)
+## :dart: About ##
 
----
+Describe your project
 
-## 🗂 Running the project
+## :sparkles: Features ##
+
+:heavy_check_mark: Feature 1;\
+:heavy_check_mark: Feature 2;\
+:heavy_check_mark: Feature 3;
+
+## :rocket: Technologies ##
+
+The following tools were used in this project:
+
+- [Expo](https://expo.io/)
+- [Node.js](https://nodejs.org/en/)
+- [React](https://pt-br.reactjs.org/)
+- [React Native](https://reactnative.dev/)
+- [TypeScript](https://www.typescriptlang.org/)
+
+## :white_check_mark: Requirements ##
+
+Before starting :checkered_flag:, you need to have [Git](https://git-scm.com) and [Node](https://nodejs.org/en/) installed.
+
+## :checkered_flag: Starting ##
 
 ```bash
+# Clone this project
+$ git clone https://github.com/Adriano-Santtos/moveit-next
 
-    # Clone the repository
-    $ git clone https://github.com/danileao/rocketmusic
+# Access
+$ cd moveit-next
 
-    # Enter directory
-    $ cd rocketmusic
+# Install dependencies
+$ yarn
 
-    # Install the dependencies
-    $ yarn install
+# Run the project
+$ yarn start
 
-    # Start the project
-    $ yarn start
+# The server will initialize in the <http://localhost:3000>
 ```
 
----
+## :memo: License ##
 
+This project is under license from MIT. For more details, see the [LICENSE](LICENSE.md) file.
+
+
+Made with :heart: by <a href="https://github.com/Adriano-Santtos" target="_blank">Adriano Santos</a>
+
+&#xa0;
+
+<a href="#top">Back to top</a>
