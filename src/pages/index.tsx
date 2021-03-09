@@ -1,72 +1,38 @@
-import Head from 'next/head';
-import {GetServerSideProps} from 'next';
+import { signIn, signOut, useSession } from 'next-auth/client';
+import styles from '../styles/pages/Index.module.css';
 
-import { CompletedChallenges } from "../components/CompletedChallenges";
-import { Countdown } from "../components/Countdown";
-import { ExperienceBar } from "../components/ExperienceBar";
-import {Profile} from "../components/Profile";
-import { ChallengeBox } from "../components/ChallengeBox";
-import { Sidebar} from '../components/Sidebar';
-
-import styles from '../styles/pages/Home.module.css';
-import { CountdownProvider } from '../contexts/Countdown.Context';
-import { ChallengesProvider } from '../contexts/ChallengesContext';
-
-
-interface HomeProps{
-  level: number;
-  currentExperience: number;
-  challengesCompleted: number;
-}
-
-export default function Home(props) {
-
-  console.log(props);
+export default function Index() {
+  const [ session, loading ] = useSession()
 
   return (
+    <div className={styles.container}>
 
-    <ChallengesProvider 
-    level={props.level}
-    currentExperience={props.currentExperience}
-    challengesCompleted={props.challengesCompleted}>
-       <div className={styles.container}>
-        <Head>
-          <title>Home</title>
-        </Head>
+        <div className={styles.session}>
+            {!session && <>
+            Not signed in <br/>
+            <button type="button" 
+            className={styles.signinButton}
+            onClick={() => 
+            signIn('auth0', { callbackUrl: 'http://localhost:3000/home' })}>
+                Sign in
+                </button>
+            </>}
 
-        <Sidebar />
+            {session && <>
+            Signed in as {session.user.email} <br/>
 
-        <div className={styles.content}>
-          <ExperienceBar />
+            <button type="button" 
+            onClick={() => 
+            signOut()}>
+                Sign out
+                </button>
+            </>}
 
-          <CountdownProvider>
-            <section>
-              <div>
-                <Profile/>
-                <CompletedChallenges/>
-                <Countdown />
-              </div>
-              <div>
-                <ChallengeBox />
-              </div>
-            </section>
-          </CountdownProvider>
         </div>
-      </div>
-    </ChallengesProvider>
 
-  );
-}
+    </div>
 
-export const getServerSideProps: GetServerSideProps = async (ctx) => {
 
-  const { level, currentExperience, challengesCompleted} = ctx.req.cookies;
+  )
   
-  return {
-    props: {
-      level: Number(level),
-      currentExperience: Number(currentExperience),
-      challengesCompleted: Number(challengesCompleted)
-    }
-  }
 }
