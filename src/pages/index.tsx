@@ -1,4 +1,4 @@
-import { signIn, signOut, useSession } from 'next-auth/client';
+import { signIn, useSession } from 'next-auth/client';
 import styles from '../styles/pages/Index.module.css';
 
 export default function Index() {
@@ -7,28 +7,41 @@ export default function Index() {
   return (
     <div className={styles.container}>
 
-        <div className={styles.session}>
+      <div>
+
+        <img src="/Simbolo.svg" alt=""/>
+      </div>
+
+
+      <div className={styles.session}>
+
+        <img className={styles.logo} src="/Logo.svg" alt=""/>
+
+        <span>Bem-vindo</span>
+        <p>Faça login para começar</p>
+       
+
+        <div className={styles.login}>
             {!session && <>
-            Not signed in <br/>
+
             <button type="button" 
-            className={styles.signinButton}
+            className={styles.loginButton}
             onClick={() => 
             signIn('auth0', { callbackUrl: 'http://localhost:3000/home' })}>
-                Sign in
+                Entrar
                 </button>
             </>}
 
-            {session && <>
-            Signed in as {session.user.email} <br/>
-
-            <button type="button" 
-            onClick={() => 
-            signOut()}>
-                Sign out
-                </button>
-            </>}
+            {/* {session && <>
+              <Link href="/home"
+              />
+            </>}  */}
 
         </div>
+      </div>
+
+      
+
 
     </div>
 

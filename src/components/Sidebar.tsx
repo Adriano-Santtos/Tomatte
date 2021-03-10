@@ -21,7 +21,7 @@ export function Sidebar() {
         </button>
 
         <button type="button" className="signout" onClick={() => 
-            signOut()}>
+            signOut({ callbackUrl: 'http://localhost:3000' })}>
           <div></div>
           <FiLogOut size={32} />
         </button>
