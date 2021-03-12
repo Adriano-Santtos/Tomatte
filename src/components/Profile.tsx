@@ -14,15 +14,25 @@ export function Profile() {
     
       return (
           <div className={styles.profileContainer}>
-            
-            
-          <div>
-          <strong>{session && <> {session.user.name} </>}</strong>
-          <p>
-              <img src="icons/level.svg" alt= "level" />
-          Level {level}
-           </p>
-          </div>
+           
+             {session && <>
+              <img src={session.user.image} alt=""/>
+                
+              <div>
+                  <strong>
+                   {session.user.name}
+                  </strong>
+                    <p>
+                        <img src="icons/level.svg" alt= "level" />
+                    Level {level}
+                    </p>
+
+              </div>
+
+
+          </>}
+
+        
         </div>
       );
 
