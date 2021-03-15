@@ -31,9 +31,9 @@ export default function Index() {
             <button type="button" 
             className={styles.loginButton}
             onClick={() => 
-            signIn('auth0', { callbackUrl: 'http://localhost:3000/home' })}>
+            signIn('github', { callbackUrl: 'http://localhost:3000/home' })}>
                 Entrar
-                </button>
+                </button>j
 
             
 
@@ -44,7 +44,7 @@ export default function Index() {
         <button type="button" 
             className={styles.loginButton}
             onClick={() => 
-              signIn('auth0', { callbackUrl: 'http://localhost:3000/home' })}
+              signIn('github', { callbackUrl: 'https://moveit-asanttos.vercel.app' })}
             >
         
                 voltar para a aplicação

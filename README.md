@@ -66,7 +66,10 @@ The following tools were used in this project:
 - [Node.js](https://nodejs.org/en/)
 - [ReactJS](https://pt-br.reactjs.org/)
 - [Next.js](https://nextjs.org/)
-- [TypeScript](https://www.typescriptlang.org/)
+- [TypeScript](https://www.typescriptlang.org)
+- [NextAuth.js](https://next-auth.js.org/)
+- [Vercel](https://vercel.com/)
+
 
 ## :white_check_mark: Requirements ##
 
