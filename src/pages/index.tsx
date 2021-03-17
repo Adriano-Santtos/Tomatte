@@ -32,7 +32,7 @@ export default function Index() {
             className={styles.loginButton}
             onClick={() => 
             signIn('github', { callbackUrl: 'http://localhost:3000/home' })}>
-                Entrar ...
+                Entrar ...j
                 </button>j
 
             
