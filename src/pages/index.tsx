@@ -47,7 +47,7 @@ export default function Index() {
               signIn('github', { callbackUrl: 'https://moveit-asanttos.vercel.app' })}
             >
         
-                voltar para a aplicação
+                vol para a aplicação
               </button>
           
       </>}

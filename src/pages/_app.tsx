@@ -1,4 +1,4 @@
-import '../styles/global.css';
+import '../styles/global.ts';
 
 import {Provider} from 'next-auth/client'
 
