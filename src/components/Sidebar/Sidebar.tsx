@@ -1,9 +1,13 @@
+import {useContext} from 'react'
 import { signOut } from 'next-auth/client';
 import { FiLogOut, FiMoon} from 'react-icons/fi';
-import styles from '../styles/components/Sidebar.module.css';
+import styles from './Sidebar.module.css';
+import {ThemeContext} from '../../contexts/ThemeContext'
 
 
 export function Sidebar() {
+
+  const {toggleTheme} = useContext(ThemeContext)
 
   return(
 
@@ -15,7 +19,7 @@ export function Sidebar() {
         
        
 
-        <button type="button">
+        <button type="button" onClick={toggleTheme}>
           <div></div>
           <FiMoon size={32} />
         </button>

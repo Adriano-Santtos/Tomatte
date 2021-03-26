@@ -1,8 +1,8 @@
 import { resolveMx } from 'dns';
 import { useContext } from 'react';
-import { ChallengesContext } from '../contexts/ChallengesContext';
-import { CountdownContext } from '../contexts/Countdown.Context';
-import styles from '../styles/components/ChallengeBox.module.css';
+import { ChallengesContext } from '../../contexts/ChallengesContext';
+import { CountdownContext } from '../../contexts/Countdown.Context';
+import styles from './ChallengeBox.module.css';
 
 
 export function ChallengeBox(){

@@ -1,7 +1,7 @@
 
 import { useContext } from 'react';
-import { CountdownContext } from '../contexts/Countdown.Context';
-import styles from '../styles/components/Countdown.module.css'
+import { CountdownContext } from '../../contexts/Countdown.Context';
+import styles from './Countdown.module.css'
 
 
 

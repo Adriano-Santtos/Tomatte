@@ -1,6 +1,5 @@
 import { signIn, useSession } from 'next-auth/client';
 import styles from '../styles/pages/Index.module.css';
-import Link from 'next/link'
 import {useRouter} from 'next/router'
 
 export default function Index() {

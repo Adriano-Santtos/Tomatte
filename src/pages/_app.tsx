@@ -1,13 +1,18 @@
 import '../styles/global.ts';
 
 import {Provider} from 'next-auth/client'
+import { ThemeProvider } from '../contexts/ThemeContext';
 
 function MyApp({ Component, pageProps }) {
 
   return (
-    <Provider session={pageProps.session}>
-        <Component {...pageProps} />
-    </Provider>
+    <ThemeProvider>
+
+      <Provider session={pageProps.session}>
+          <Component {...pageProps} />
+      </Provider>
+
+    </ThemeProvider>
 
   )
 }

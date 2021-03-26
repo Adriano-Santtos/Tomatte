@@ -15,7 +15,8 @@
 }
 
 .loginButton {
-    background-color: var(--green);
+    background-color:var(--green);
+;
     position: absolute;
     width: 340px;
     height: 80px;
