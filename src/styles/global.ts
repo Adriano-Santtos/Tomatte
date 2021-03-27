@@ -1,18 +1,9 @@
-<<<<<<< HEAD
 import {createGlobalStyle} from 'styled-components'
 
 export default createGlobalStyle `
 :root{
   --bodyColor: ${props => props.theme.colors.bodyColor};
   --background: ${props => props.theme.colors.background};
-=======
-import { createGlobalStyle } from 'styled-components';
-
-export default createGlobalStyle`
-:root {
-  --bodyColor: ${({theme})=>theme.colors.bodyColor};
-  --background: ${ ({theme})=>theme.colors.background};
->>>>>>> dark mode
   --gray-line: ${props => props.theme.colors.grayLine};
   --text: ${props => props.theme.colors.text};
   --text-highlight: ${props => props.theme.colors.textHighlight};
@@ -26,82 +17,33 @@ export default createGlobalStyle`
   --invert-black: ${props => props.theme.colors.invertBlack};
   --overlay: ${props => props.theme.colors.overlay};
 }
-
 * {
-<<<<<<< HEAD
 margin: 0;
 padding: 0;
 box-sizing: border-box;
 }
-
-
 @media(max-width: 1080px){
     html{
         font-size: 93.75%;
     }
 }
-
 @media(max-width: 720px){
     html{
         font-size: 87.5%;
     }
 }
-
 body {
     background: var(--background);
     color: var(--text);
 }
-
-
 body, input, textarea, button {
     font: 400 1rem "Inter", sans-serif;
 }
-
 button {
     cursor: pointer;
 }
-
 a {
     color: inherit;
     text-decoration: none;
 }
-
 `
-=======
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  outline: var(--text-highlight);
-}
-
-@media(max-width: 1080px) {
-  html {
-    font-size: 93.75%;
-  }
-}
-
-@media(max-width: 720px) {
-  html {
-    font-size: 87.5%;
-  }
-}
-
-body {
-  background: var(--background);
-  color:  var(--text);
-}
-
-body, input, textarea, button {
-  font: 400 1rem "Inter", sans-serif;
-}
-
-button {
-  cursor: pointer;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
-`;
->>>>>>> dark mode

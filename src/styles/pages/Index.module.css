@@ -1,90 +1,97 @@
 .container {
     display: flex;
     flex-direction: row;
-    background-color: #5965e0;
     max-width: 100%;
     height: 100vh;
 
+
+    background: url("/images/bg.jpg") no-repeat center fixed;
+    background-size: cover;
+
 }
+
+
 
 .session{
     display: flex;
-    flex-direction: column;
-    
-    
+    flex-direction: row;
 }
 
-.loginButton {
-    background-color:var(--green);
-;
+
+.logo{
     position: absolute;
-    width: 340px;
-    height: 80px;
-    left: 820px;
-    top: 541px;
-    
-    border: 0;
-    border-radius: 5px;
+    width: 425px;
+    height: 150px;
+    left: 95px;
+    top: 101px;
 
-    color: var(--white);
+}
 
-    font-size: 2rem;
+.session span{
+    position: absolute;
+    width: 764px;
+    height: 180px;
+    left: 107px;
+    top: 309px;
     
-      
+    font-family: Inter;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 65px;
+    line-height: 60px;
+    /* or 92% */
+    
+    display: flex;
+    align-items: center;
+    
+    color: #DD2E44;
+    
+
+}
+
+.buttons{
+    display: flex;
+    flex-direction: row;
+}
+.loginButton {
+    position: absolute;
+    width: 250px;
+    height: 66px;
+    left: 117px;
+    top: 627px;
+
+    background: #DD2E44;
+    border-radius: 15px;  
 }
 
 .loginButton:hover{
     filter:brightness(0.9);
 }
 
-
-    
-.img {
-    position: absolute; 
-    width: 768px;
-    height: 660px;
-    left: -68px;
-    top: 80px;
-
-    opacity: 0.08;
-
-}
-
-.logo{
+.infoButton{
     position: absolute;
-    width: 360px;
-    height: 76px;
-    left: 820px;
-    top: 199px;
-}
-
-.session span{
-   color: var(--white);
-   position: absolute;
-   width: 191px;
-   height: 46px;
-   left: 820px;
-   top: 371px;
-   
-   font-family: Inter;
-   font-style: normal;
-   font-weight: 600;
-   font-size: 36px;
-   line-height: 46px;
-}
-
-.session p{
-    color: var(--text-highlight);
-    position: absolute;
-    width: 318px;
-    height: 60px;
-    left: 820px;
-    top: 461px;
-
-    font-family: Inter;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 30px;
+    width: 250px;
+    height: 66px;
+    left: 440px;
+    top: 627px;
     
+    opacity: 0.7;
+    border: 1px solid #DD2E44;
+    box-sizing: border-box;
+    border-radius: 15px;
+
+}
+
+.slider img{
+    position: absolute;
+    width: 489px;
+    height: 671px;
+    left: 889px;
+    top: 87px;
+
+    opacity: 0.8;
+
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 30px;
+
 }

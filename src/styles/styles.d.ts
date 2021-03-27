@@ -1,14 +1,7 @@
-<<<<<<< HEAD
-import 'styled-components';
 
-declare module 'styled-components' {
-  export interface DefaultTheme {
-    title: string;
-=======
 import 'styled-componets';
 
 interface Theme {
->>>>>>> dark mode
     colors: {
       bodyColor: string;
       background: string;
@@ -19,11 +12,7 @@ interface Theme {
       invertWhite: string;
       invertBlack: string;
       overlay: string;
-<<<<<<< HEAD
-    }
-  }
-}
-=======
+
     };
 };
 
@@ -31,5 +20,4 @@ interface Theme {
       // eslint-disable-next-line @typescript-eslint/no-empty-interface
       export interface DefaultTheme extends Theme {}
     }
-    
->>>>>>> dark mode
+

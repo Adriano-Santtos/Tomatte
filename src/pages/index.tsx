@@ -8,9 +8,37 @@ export default function Index() {
 
   return (
     <div className={styles.container}>
+      
     {!session && <>
 
-      <div>
+    <div className={styles.session}>
+      <img className={styles.logo} src="/logo-tomatte.svg" alt="logo"/>
+      
+      <span>Promova sua saúde e  mantenha o foco em suas atividades.</span>
+      
+      <div className={styles.buttons}>
+
+        <button type="button" 
+        className={styles.loginButton}
+        onClick={() => 
+        signIn('github', { callbackUrl: 'http://localhost:3000/home' })}>
+            <img src="/icons/github.svg" alt=""/>
+            LOGIN
+        </button>
+
+        <button type="button"
+        className={styles.infoButton}
+        >
+          SAIBA MAIS
+        </button>
+
+      </div>
+    </div>
+        <div className={styles.slider}>
+          <img  src="/images/image.jfif" alt="image"/>
+        </div>
+
+      {/* <div>
 
         <img src="/Simbolo.svg" alt=""/>
       </div>
@@ -27,17 +55,10 @@ export default function Index() {
         <div className={styles.login}>
           
 
-            <button type="button" 
-            className={styles.loginButton}
-            onClick={() => 
-            signIn('github', { callbackUrl: 'http://localhost:3000/home' })}>
-                Entrar ...j
-                </button>j
-
             
 
         </div>
-      </div>
+      </div> */}
     </>}
       {session && <>
         <button type="button" 
