@@ -8,13 +8,15 @@ export default function Index() {
 
   return (
     <div className={styles.container}>
+
+      <img className={styles.bg} src="/images/bg.jpg" alt=""/>
       
     {!session && <>
 
     <div className={styles.session}>
       <img className={styles.logo} src="/logo-tomatte.svg" alt="logo"/>
       
-      <span>Promova sua saúde e  mantenha o foco em suas atividades.</span>
+      <span>Promova sua saúde e  mantenha o foco nas atividades.</span>
       
       <div className={styles.buttons}>
 
