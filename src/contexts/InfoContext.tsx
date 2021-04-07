@@ -1,4 +1,4 @@
-import {createContext, ReactNode} from "react";
+import {createContext, ReactNode, useState, useEffect} from "react";
 
 interface InfoContextData{
 
@@ -12,8 +12,18 @@ interface InfoProviderProps{
 export const InfoContext = createContext({} as InfoContextData);
 
 export function InfoProvider ({children}: InfoProviderProps){
+    const [infoBox, setInfoBox] = useState(false);
 
+    function infoBoxOpen(){
 
+    }
+
+    useEffect(() => {
+        effect
+        return () => {
+            cleanup
+        }
+    }, [input])
     
     
     return (
@@ -22,6 +32,6 @@ export function InfoProvider ({children}: InfoProviderProps){
         }}>
         {children}
     </InfoContext.Provider>
-    
+
   );
 };

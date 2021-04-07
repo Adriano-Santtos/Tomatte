@@ -29,7 +29,8 @@ box-sizing: border-box;
 }
 @media(max-width: 720px){
     html{
-        font-size: 87.5%;
+        font-size: 50.5%;
+       
     }
 }
 body {

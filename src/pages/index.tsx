@@ -7,74 +7,61 @@ export default function Index() {
   const router = useRouter()
 
   return (
+  
     <div className={styles.container}>
 
+
       <img className={styles.bg} src="/images/bg.jpg" alt=""/>
-      
-    {!session && <>
 
-    <div className={styles.session}>
-      <img className={styles.logo} src="/logo-tomatte.svg" alt="logo"/>
-      
-      <span>Promova sua saúde e  mantenha o foco nas atividades.</span>
-      
-      <div className={styles.buttons}>
-
-        <button type="button" 
-        className={styles.loginButton}
-        onClick={() => 
-        signIn('github', { callbackUrl: 'http://localhost:3000/home' })}>
-            <img src="/icons/github.svg" alt=""/>
-            LOGIN
-        </button>
-
-        <button type="button"
-        className={styles.infoButton}
-        >
-          SAIBA MAIS
-        </button>
-
-      </div>
-    </div>
-        <div className={styles.slider}>
-          <img  src="/images/image.jfif" alt="image"/>
-        </div>
-
-      {/* <div>
-
-        <img src="/Simbolo.svg" alt=""/>
-      </div>
-
+        
+      {!session && <>
 
       <div className={styles.session}>
 
-        <img className={styles.logo} src="/Logo.svg" alt=""/>
-
-        <span>Bem-vindo</span>
-        <p>Faça login para começar</p>
-       
-
-        <div className={styles.login}>
+          <img className={styles.logo} src="/logo-tomatte.svg" alt="logo"/>
           
+          
+          <span>Promova sua saúde e  mantenha o foco nas atividades.</span>
+          
+          <div className={styles.buttons}>
 
-            
-
-        </div>
-      </div> */}
-    </>}
-      {session && <>
-        <button type="button" 
+            <button type="button" 
             className={styles.loginButton}
             onClick={() => 
-              signIn('github', { callbackUrl: 'https://moveit-asanttos.vercel.app' })}
-            >
-        
-                voltar para a aplicação
-              </button>
-          
-      </>}
+            signIn('github', { callbackUrl: 'http://localhost:3000/home' })}>
+                <img src="/icons/github.svg" alt=""/>
+                LOGIN
+            </button>
 
-      
+            <button type="button"
+            className={styles.infoButton}
+            >
+              <p>SAIBA MAIS</p>
+            </button>
+
+          </div>
+      </div>
+
+      <div className={styles.slider}>
+
+        <img  src="/images/image.jfif" alt="image"/>
+
+      </div>
+
+      </>}
+        {session && <>
+          <button type="button" 
+              className={styles.loginButton}
+              onClick={() => 
+                signIn('github', { callbackUrl: 'https://moveit-asanttos.vercel.app' })}
+              >
+          
+                  voltar para a aplicação
+                </button>
+            
+        </>}
+
+        
 
 
     </div>

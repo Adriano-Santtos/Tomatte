@@ -3,47 +3,49 @@
     flex-direction: row;
     max-width: 100%;
     height: 100vh;
+    align-items: center;
+    position: relative;
+    
+   
+    
 
 }
 
 .bg{
-    opacity: 0.4;
-    height: 100%;
-    width: max-content;
-
-    
+    position: absolute;
+    width: 100%;
+    height: auto;
+    opacity: 0.8;
 }
 
-
-
 .session{
+    position: relative;
+    margin-left: 107px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    align-items: right;
+   
 }
 
 
 .logo{
-    position: absolute;
+    margin-bottom: 50px;
     width: 425px;
     height: 150px;
-    left: 95px;
-    top: 101px;
-
+    
 }
 
 .session span{
-    position: absolute;
+    margin-bottom: 130px;
     width: 764px;
     height: 180px;
-    left: 107px;
-    top: 309px;
+   
     
     font-family: Inter;
     font-style: normal;
     font-weight: bold;
     font-size: 65px;
     line-height: 60px;
-    /* or 92% */
     
     display: flex;
     align-items: center;
@@ -57,17 +59,18 @@
     display: flex;
     flex-direction: row;
 }
+
 .loginButton {
+    margin-left: 30px;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     
-    position: absolute;
+    
     width: 250px;
     height: 66px;
-    left: 117px;
-    top: 627px;
+    
 
     background: #DD2E44;
     border-radius: 15px;  
@@ -94,11 +97,10 @@
 }
 
 .infoButton{
-    position: absolute;
+    margin-left: 70px;
+    
     width: 250px;
     height: 66px;
-    left: 440px;
-    top: 627px;
     
     opacity: 0.5;
     border: 1px solid #DD2E44;
@@ -116,16 +118,104 @@
 
 }
 
+.slider{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .slider img{
-    position: absolute;
+    
     width: 489px;
     height: 671px;
-    left: 889px;
-    top: 87px;
 
     opacity: 0.8;
 
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     border-radius: 30px;
+
+}
+
+@media screen and (max-width:700px){
+    .container{
+        display: flex;
+        flex-direction: column;
+        
+        position: relative;
+
+        min-width: 360px;
+        width: 100%;
+        height: auto;
+
+        align-items: center;
+
+        overflow: hidden;
+       
+    }
+
+    .bg{
+        display: none;
+    }
+
+    .session{
+        margin: 0;
+        padding: 0;
+        align-items: center;
+        width: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+
+    }
+
+    .logo{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+
+    }
+
+    .session span{
+        margin: 0;
+        width: 100%;
+        font-size: 30px;
+    }
+
+    .buttons{
+        margin: 0;
+        padding: 5;
+        align-items: center;
+        justify-content: center;
+        background-color: #DD2E44;
+        width: 100%;
+
+    }
+
+    .infoButton{
+        width: 100%;
+    }
+
+   
+
+    .loginButton{
+        width: 100%;
+    }
+    
+    .slider{
+        margin: 0;
+        padding: 0;
+        width: fit-content;
+        flex-direction: column;
+
+        justify-content:center;
+        align-items: center;
+    }
+
+    .slider img{
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        
+    }
+
 
 }
