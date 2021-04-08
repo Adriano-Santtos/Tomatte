@@ -2,6 +2,7 @@ import { signIn, useSession } from 'next-auth/client';
 import styles from '../styles/pages/Index.module.css';
 import {useRouter} from 'next/router'
 
+
 export default function Index() {
   const [ session, loading ] = useSession()
   const router = useRouter()
@@ -17,11 +18,17 @@ export default function Index() {
       {!session && <>
 
       <div className={styles.session}>
+        
 
-          <img className={styles.logo} src="/logo-tomatte.svg" alt="logo"/>
+         <div className={styles.header}>
+            <img className={styles.logoImage} src="/logo-tomatte.svg" alt="logo"/>
+            <img className={styles.infoHeader} src="/icons/info.svg" alt="info"/>
+         </div>
+
           
           
           <span>Promova sua saúde e  mantenha o foco nas atividades.</span>
+          <p>Promova sua saúde e  mantenha o foco nas atividades.</p>
           
           <div className={styles.buttons}>
 
@@ -36,17 +43,14 @@ export default function Index() {
             <button type="button"
             className={styles.infoButton}
             >
+              <img className={styles.info} src="/icons/info.svg" alt="info"/>
               <p>SAIBA MAIS</p>
             </button>
 
           </div>
       </div>
 
-      <div className={styles.slider}>
-
-        <img  src="/images/image.jfif" alt="image"/>
-
-      </div>
+      
 
       </>}
         {session && <>
