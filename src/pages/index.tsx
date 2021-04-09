@@ -12,7 +12,7 @@ export default function Index() {
     <div className={styles.container}>
 
 
-      <img className={styles.bg} src="/images/bg.jpg" alt=""/>
+      <img className={styles.bg} src="/images/bg-mobile.png" alt=""/>
 
         
       {!session && <>
@@ -28,7 +28,7 @@ export default function Index() {
           
           
           <span>Promova sua saúde e  mantenha o foco nas atividades.</span>
-          <p>Promova sua saúde e  mantenha o foco nas atividades.</p>
+          <p>O Tomatte combina a técnica pomodoro com alongamentos durante as pausas.</p>
           
           <div className={styles.buttons}>
 
@@ -36,8 +36,8 @@ export default function Index() {
             className={styles.loginButton}
             onClick={() => 
             signIn('github', { callbackUrl: 'http://localhost:3000/home' })}>
-                <img src="/icons/github.svg" alt=""/>
-                LOGIN
+              <img src="/icons/github.svg" alt=""/>
+              LOGIN
             </button>
 
             <button type="button"

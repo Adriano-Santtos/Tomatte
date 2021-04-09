@@ -12,12 +12,54 @@
     .container{
         display: flex;
         flex-direction: column;
-
         overflow: hidden;
-        width: 100%;
+        height: 100vh;
+        background-image: url("/images/bg-mobile.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        
     }
     .bg{
         display: none;
+
+    }
+
+     .session{
+         height: 100%;
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+     }
+
+     .session span{
+        margin-top: 40px;
+        font-family: Inter;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 36px;
+        line-height: 34px;
+        
+        text-align: center;
+        
+        color: #DD2E44;
+
+     }
+
+     .session p{
+        margin-top: 97px;
+        font-family: Inria Sans;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 21px;
+        
+        display: flex;
+        align-items: center;
+        text-align: center;
+
+        
+        color: #2E384D;
+        
+        opacity: 0.7;
      }
 
      .header{
@@ -35,5 +77,41 @@
          width:200px;
          height: 71px;
      }
+
+     .infoButton{
+         display: none;
+     }
+
+
+     .loginButton{
+        margin-top: 115px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        width: 250px;
+        height: 66px;
+       
+        background-color: #DD2E44;
+        border-radius: 5px;
+        border: none;
+
+        margin-left: 14px;
+        font-family: Inter;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 30px;
+        line-height: 34px;
+
+        color: white;
+
+     }
+
+     .loginButton img{
+         margin-right: 14px;
+     }
+
+     
+
 
 }
