@@ -1,19 +1,139 @@
+
 @media screen and (min-width:1024px){
-
-}
-    
-
-@media screen and (min-width:768px) and (max-width: 1023px){
-    
-}
-
-
-@media screen and (max-width:767px){
     .container{
         display: flex;
-        flex-direction: column;
-        overflow: hidden;
+        flex-direction: row-reverse;
+        width: 100%;
         height: 100vh;
+    }
+
+    .bg{
+        width: 46.5%;  
+        height: 100vh; 
+    }
+
+
+  
+    .section{
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        width: 53.5%;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .header{
+        align-items: center;
+    }
+
+    .infoHeader{
+        display: none;
+    }
+
+
+    .info1{
+        margin-top: 22px;
+        padding: 10px;
+        width: 100%;
+        height: 180px;
+
+        font-family: Inter;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 60px;
+        line-height: 60px;
+
+        text-align: center;
+        
+        color: #DD2E44;
+    }
+
+    .info2{
+        padding: 10px;
+        margin-top: 96px;
+
+        width: 100%;
+        height: 70px;
+
+        font-family: Inria Sans;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 35px;
+        line-height: 35px;
+        
+        text-align: center;
+        color: #2E384D;
+
+        opacity: 0.7;
+    }
+
+    .buttons{
+        margin-top: 96px;
+        margin-bottom: 100px;
+        display: flex;
+        flex-direction: row;
+        width: 85%;
+        justify-content: space-between;
+    }
+
+    .loginButton{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        width: 220px;
+        height: 66px;
+       
+        background-color: #DD2E44;
+        border-radius: 5px;
+        border: none;
+
+        font-family: Inter;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 30px;
+        line-height: 34px;
+
+        color: white;
+     }
+
+     .loginButton img{
+         margin-right: 14px;
+     }
+     
+     .infoButton{
+        width: 220px;
+        height: 66px;
+
+        border: 2px solid #DD2E44;
+        box-sizing: border-box;
+        border-radius: 5px;
+
+        font-family: Inter;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 30px;
+        line-height: 34px;
+       
+        text-align: center;
+
+        color: #DD2E44;
+
+        opacity: 0.7;
+     }
+}
+
+
+@media screen and (min-width:768px) and (max-width: 1023px){
+    .container{
+        overflow: hidden;
+        overflow-y: scroll;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        
         background-image: url("/images/bg-mobile.png");
         background-repeat: no-repeat;
         background-size: cover;
@@ -21,17 +141,153 @@
     }
     .bg{
         display: none;
+    }
+    
+    .header{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        
+        width: 100%;
+        background-color:#2E384D ;
+        height: 100px;
 
     }
+    
+    .infoHeader{
+        display: none;
+    }
 
-     .session{
-         height: 100%;
+    .logoImage{
+       height: 100%;
+    }
+    
+     .section{
          display: flex;
          flex-direction: column;
          align-items: center;
+         height: 100%;
+
+         justify-content: space-between;
+        
+        }
+
+     .info1{
+        margin-top: 117px;
+        font-family: Inter;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 60px;
+        line-height: 65px;
+        
+        text-align: center;
+        
+        color: #DD2E44;
+
      }
 
-     .session span{
+     .info2{
+        margin-top: 105px;
+        font-family: Inria Sans;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 40px;
+        line-height: 40px;
+        
+        display: flex;
+        align-items: center;
+        text-align: center;
+
+        
+        color: #2E384D;
+        
+        opacity: 0.7;
+     }
+
+
+     .buttons{
+         display: flex;
+         margin-top: 175px;
+         margin-bottom: 100px;
+         width: 85%;
+         justify-content: space-around;
+     }
+
+     .loginButton{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        width: 250px;
+        height: 66px;
+       
+        background-color: #DD2E44;
+        border-radius: 5px;
+        border: none;
+
+        font-family: Inter;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 30px;
+        line-height: 34px;
+
+        color: white;
+     }
+
+     .loginButton img{
+         margin-right: 14px;
+     }
+     
+     .infoButton{
+        width: 250px;
+        height: 66px;
+
+        border: 2px solid #DD2E44;
+        box-sizing: border-box;
+        border-radius: 5px;
+
+        font-family: Inter;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 30px;
+        line-height: 34px;
+       
+        text-align: center;
+
+        color: #DD2E44;
+
+        opacity: 0.7;
+     }
+
+    
+    }
+
+@media screen and (max-width:767px){
+    .container{
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        overflow-y: scroll;
+        height: 100vh;
+        background-image: url("/images/bg-mobile.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .bg{
+        display: none;
+    }
+
+     .section{
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         height: 100%;
+         justify-content: space-between;
+     }
+
+     .info1{
         margin-top: 40px;
         font-family: Inter;
         font-style: normal;
@@ -45,7 +301,7 @@
 
      }
 
-     .session p{
+     .info2{
         margin-top: 97px;
         font-family: Inria Sans;
         font-style: normal;
@@ -78,6 +334,8 @@
          height: 71px;
      }
 
+     
+
      .infoButton{
          display: none;
      }
@@ -85,6 +343,7 @@
 
      .loginButton{
         margin-top: 115px;
+        margin-bottom: 80px;
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -110,8 +369,4 @@
      .loginButton img{
          margin-right: 14px;
      }
-
-     
-
-
 }
