@@ -46,7 +46,7 @@
   <a href="https://github.com/Adriano-Santtos" target="_blank">Author</a>
 </p>
 
-<img src="./public/cover.gif"/>
+<img src="./public/cover.png"/>
 &#xa0
 
 <br>

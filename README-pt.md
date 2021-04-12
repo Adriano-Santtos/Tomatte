@@ -46,7 +46,7 @@ Status
   <a href="#checkered_flag-clone">Clone</a> &#xa0; | &#xa0;
   <a href="#memo-license">Licença</a> &#xa0;  &#xa0;
 </p>
-<img src="./public/cover.gif"/>
+<img src="./public/cover.png"/>
 &#xa0
 
 <br>
