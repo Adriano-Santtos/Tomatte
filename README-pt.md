@@ -61,11 +61,14 @@ Essa aplicação combina a técnica pomodoro com a realização de alongamentos 
 
 ## :sparkles: Funcionalidades ##
 
-Cadastro de escolas participantes;\
-👉 Cadastro de alunos carentes;\
-👉 Cadastro de doadores ou doação anônima;\
-👉 Pesquisa de escolas participantes;\
-👉 Notificação de disponibilidade de materiais recebidos;\
+👉 Login com Github;\
+👉 Modo escuro;\
+👉 Site responsivo;
+
+**Próximas Funcionalidades:**
+ * Acesso anônimo;
+ * Tabela de líderes;
+ * Versão Mobile
 
 ## :rocket: Tecnologias ##
 
