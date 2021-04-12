@@ -1,5 +1,5 @@
  <div align="center" id="top"> 
-  <a href="https://github.com/Adriano-Santtos/Tomatte"> English <img src="https://flagpedia.net/data/flags/w580/us.png" width=20px/></a>
+  <a> English <img src="https://flagpedia.net/data/flags/w580/us.png" width=20px/></a>
   - <a href="README-pt.md"><img src="https://flagpedia.net/data/flags/w580/br.png" width=20px/> Portuguese </a>
 </div>
 &#xa0;
