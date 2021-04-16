@@ -1,7 +1,7 @@
 export const darkTheme={
     colors: {
       bodyColor: '#202024',
-      background: '#151515',
+      background: '#000',
       grayLine: '#29292e',
       text: '#a8a8b3',
       textHighlight: '#B3B9FF',
@@ -25,6 +25,4 @@ export const darkTheme={
       overlay: 'rgba(254, 254, 254, 0.75)',
     }
   }
-  
-
   

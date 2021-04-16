@@ -5,13 +5,24 @@
   
     margin: 3.5rem 0;
     padding-bottom: 1rem;
-    border-bottom: 1px solid var var(--gray-line);
+    border-bottom: 1px solid var(--gray-line);
   
     font-weight: 500;
+    
+  }
+
+  .completedChallengesContainer span{
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 34px;
+
   }
   
   .completedChallengesContainer span:first-child {
     font-size: 1.25rem;
+   
   }
   
   .completedChallengesContainer span:last-child {

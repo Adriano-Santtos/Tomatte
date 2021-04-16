@@ -2,17 +2,21 @@ import '../styles/global.ts';
 
 import {Provider} from 'next-auth/client'
 import { ThemeProvider } from '../contexts/ThemeContext';
+import { InfoBoxProvider } from '../contexts/InfoBoxContext';
 
 function MyApp({ Component, pageProps }) {
 
   return (
-    <ThemeProvider>
+    <InfoBoxProvider >
+      <ThemeProvider>
 
-      <Provider session={pageProps.session}>
-          <Component {...pageProps} />
-      </Provider>
+        <Provider session={pageProps.session}>
+            <Component {...pageProps} />
+        </Provider>
 
-    </ThemeProvider>
+      </ThemeProvider>
+
+    </InfoBoxProvider>
 
   )
 }
