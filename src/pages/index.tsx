@@ -2,13 +2,8 @@ import Head from 'next/head';
 import {useContext } from 'react';
 import { signIn, useSession } from 'next-auth/client';
 import styles from '../styles/pages/Index.module.css';
-import {useRouter} from 'next/router'
 import React from 'react';
 import { InfoBoxContext } from '../contexts/InfoBoxContext';
-import {InfoBoxProvider} from '../contexts/InfoBoxContext';
-import {InfoBox} from '../components/InfoBox/InfoBox'
-import Home from './home';
-
 
 
 export default function Index() {
@@ -16,7 +11,6 @@ export default function Index() {
   const{openInfoBox, isInfoBoxOpen} = useContext(InfoBoxContext);
 
   const [ session ] = useSession()
-  const router = useRouter()
 
   return (
     
@@ -37,14 +31,21 @@ export default function Index() {
             <div className={styles.header}>
 
               <img className={styles.logoImage} src="/logo-tomatte.svg" alt="logo"/>
+              <button type="button"
+                 className={styles.buttonInfoHeader}
+                  onClick={openInfoBox}
+                  >
               <img className={styles.infoHeader} src="/icons/info.svg" alt="info"/>
+                    
+              </button>
 
             </div>
               <p className={styles.info1}>
                 Promova sua saúde e  mantenha o foco nas atividades.
               </p>
               <p className={styles.info2}>
-                O Tomatte combina a técnica pomodoro com alongamentos durante as pausas.
+                O Tomatte combina a técnica pomodoro com alongamentos e um sistema de gamificação.
+                
               </p>
          
 
@@ -66,9 +67,7 @@ export default function Index() {
                   </button>
 
                 </div>
-                
-         
-              
+
           </div>
         </>}
 
