@@ -2,14 +2,13 @@
   <a> English <img src="https://flagpedia.net/data/flags/w580/us.png" width=20px/></a>
   - <a href="README-pt.md"><img src="https://flagpedia.net/data/flags/w580/br.png" width=20px/> Portuguese </a>
 </div>
-&#xa0;
+
 
 <div align="center" id="top"> 
   <img src="public/logo-tomatte.svg" />
  
 </div> 
 
-  <!--<a href="https://tomatte.netlify.app">Demo</a> --> 
 <h1 align="center">Tomatte</h1>
 
 <p align="center">
@@ -44,10 +43,18 @@
   <a href="#checkered_flag-starting">Starting</a> &#xa0; | &#xa0;
   <!-- <a href="#memo-license">License</a> &#xa0; | &#xa0; -->
   <a href="https://github.com/Adriano-Santtos" target="_blank">Author</a>
-</p>
+</p> &#xa0;
+
+ 
 
 <img src="./public/cover.png"/>
-&#xa0
+<img src="./public/cover2.png"/>
+
+&#xa0;
+ <p align="center">
+  <a 
+  href="https://tomatte.vercel.app/" ><strong>👉 Demo Link 👈</strong></a>
+  </p>
 
 <br>
 
@@ -55,7 +62,7 @@
 
 **Tomatte** was inspired by [Move.it](https://www.figma.com/file/5d1esZL1c8jwUFlPrcOtjQ/Move.it-1.0-(Copy)?node-id=160%3A2761), a project carried out during the 4th edition of Next Level Week, carried out by [Rocketseat](https://rocketseat.com.br/).
 
-This application combines the [pomodoro technique](https://pt.wikipedia.org/wiki/T%C3%A9cnica_pomodoro#:~:text=A%20T%C3%A9cnica%20Pomodoro%20%C3%A9%20um,minutos%2C%20separados%20por%20breves%20intervalos.) with stretching during breaks.
+This application combines the [pomodoro technique](https://pt.wikipedia.org/wiki/T%C3%A9cnica_pomodoro#:~:text=A%20T%C3%A9cnica%20Pomodoro%20%C3%A9%20um,minutos%2C%20separados%20por%20breves%20intervalos.) with stretching during breaks, in addition to having a gamification system to make things more fun.
 
 ## :sparkles: Features ##
 

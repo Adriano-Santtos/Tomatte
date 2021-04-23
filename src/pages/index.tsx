@@ -54,7 +54,7 @@ export default function Index() {
                   <button type="button" 
                   className={styles.loginButton}
                   onClick={() => 
-                  signIn('github', { callbackUrl: 'http://localhost:3000/home' })}>
+                  signIn('github', { callbackUrl: 'https://tomatte.vercel.app/home' })}>
                     <img src="/icons/github.svg" alt=""/>
                     LOGIN
                   </button>

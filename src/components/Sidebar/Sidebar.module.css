@@ -14,8 +14,9 @@
       }
     
       .container img {
-        top: 30px;
+        top: 10px;
         width: 55px;
+        height: 55px;
         position: absolute;
       }
     

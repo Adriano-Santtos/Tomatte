@@ -47,7 +47,13 @@ Status
   <a href="#memo-license">Licença</a> &#xa0;  &#xa0;
 </p>
 <img src="./public/cover.png"/>
-&#xa0
+<img src="./public/cover2.png"/>
+&#xa0;
+ <p align="center">
+  <a 
+  href="https://tomatte.vercel.app/" ><strong>👉 Demo Link 👈</strong></a>
+  </p>
+
 
 <br>
 
@@ -55,7 +61,7 @@ Status
 
 O **Tomatte** foi inspirado no [Move.it](https://www.figma.com/file/5d1esZL1c8jwUFlPrcOtjQ/Move.it-1.0-(Copy)?node-id=160%3A2761), projeto realizado durante a 4ª edição da Next Level Week, realizado pela [Rocketseat](https://rocketseat.com.br/).
 
-Essa aplicação combina a técnica pomodoro com a realização de alongamentos durante as pausas.
+Essa aplicação combina a técnica pomodoro com a realização de alongamentos durante as pausas. Além de ter um sistema de gamificação para deixas as coisas mais divertidas.
 
 
 

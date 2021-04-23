@@ -18,11 +18,11 @@ export default function Next(){
                       Também será implementado seguintes funcionalidades:
                 </span>
                     <ul>
-                        <li>Lista de líderes</li>
-                        <li>Acesso anônimo</li>
-                        <li>Acesso por outras plataformas</li>
-                        <li>Versão Mobile</li>
-                         <li>Versão em Inglês</li>
+                        <li>Placar de líderes;</li>
+                        <li>Acesso anônimo;</li>
+                        <li>Acesso por outras plataformas;</li>
+                        <li>Versão Mobile;</li>
+                         <li>Versão em Inglês;</li>
                     </ul> 
             </div>
             
