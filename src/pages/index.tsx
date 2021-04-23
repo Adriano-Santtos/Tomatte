@@ -1,4 +1,4 @@
-import Link from 'next/link'
+import Head from 'next/head';
 import {useContext } from 'react';
 import { signIn, useSession } from 'next-auth/client';
 import styles from '../styles/pages/Index.module.css';
@@ -21,6 +21,11 @@ export default function Index() {
   return (
     
     <div className={styles.container}>
+      <Head>
+          <title>
+            Tomatte
+          </title>
+      </Head>
       
         {!session && <>
         <img className={styles.bg} src="/images/bg.png" alt=""/>
