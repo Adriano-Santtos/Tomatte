@@ -1,34 +1,81 @@
-.experienceBar {
-    display: flex;
-    align-items: center;
-    margin-bottom: 2rem;
+
+  @media screen and (min-width:1024px){
+    .experienceBar {
+      display: flex;
+      align-items: center;
+      margin-bottom: 2rem;
+    }
+    
+    .experienceBar span {
+      font-size: 1rem;
+    }
+    
+    .experienceBar > div {
+      flex: 1;
+      height: 4px;
+      border-radius: 4px;
+      background-color: var(--gray-line);
+      margin: 0 1.5rem;
+      position: relative;
+    }
+    
+    .experienceBar > div  > div {
+      height: 4px;
+      border-radius: 4px;
+      background: var(--green);
+    
+    }
+    
+    span.currentExperience {
+      position: absolute;
+      top: 12px;
+      transform: translateX(-50%);
+      min-width: 3.75rem;
+      text-align: center;
+    }
+
+  }
+      
+  
+  @media screen and (min-width:768px) and (max-width: 1023px){
+      
   }
   
-  .experienceBar span {
-    font-size: 1rem;
+  
+  @media screen and (max-width:767px){
+
+    .experienceBar {
+      display: flex;
+      align-items: center;
+      margin-bottom: 5rem;
+    }
+    
+    .experienceBar span {
+      font-size: 1.6rem;
+    }
+    
+    .experienceBar > div {
+      flex: 1;
+      height: 9px;
+      border-radius: 9px;
+      background-color: var(--gray-line);
+      margin: 0 1.5rem;
+      position: relative;
+    }
+    
+    .experienceBar > div  > div {
+      height: 9px;
+      border-radius:9px;
+      background: var(--green);
+    
+    }
+    
+    span.currentExperience {
+      position: absolute;
+      top: 12px;
+      transform: translateX(-50%);
+      min-width: 3.75rem;
+      text-align: center;
+    }
+      
   }
-  
-  .experienceBar > div {
-    flex: 1;
-    height: 4px;
-    border-radius: 4px;
-    background-color: var(--gray-line);
-    margin: 0 1.5rem;
-    position: relative;
-  }
-  
-  .experienceBar > div  > div {
-    height: 4px;
-    border-radius: 4px;
-    background: var(--green);
-  
-  }
-  
-  span.currentExperience {
-    position: absolute;
-    top: 12px;
-    transform: translateX(-50%);
-    min-width: 3.75rem;
-    text-align: center;
-  }
-  

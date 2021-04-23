@@ -29,6 +29,7 @@ export default function Home(props) {
     level={props.level}
     currentExperience={props.currentExperience}
     challengesCompleted={props.challengesCompleted}>
+      
        <div className={styles.container}>
         <Head>
           <title>Home</title>
