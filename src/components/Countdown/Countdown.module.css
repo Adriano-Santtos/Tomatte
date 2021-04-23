@@ -109,7 +109,7 @@
   }
   
   
-  @media screen and (max-width:767px){
+  @media screen and (max-width:1023px){
     .countdownContainer {
       display: flex;
       align-items: center;

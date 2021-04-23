@@ -25,31 +25,21 @@
 
   }
       
+
   
-  /* @media screen and (min-width:768px) and (max-width: 1023px){
-      
-  } */
-  
-  
-  @media screen and (max-width:767px){
+  @media screen and (max-width:1023px){
 
     .container{
       justify-content: space-between;
-      
       display: flex;
       flex-direction: column-reverse;
       overflow: scroll;
       overflow-y: scroll;
-
       height: 100vh;
     }
 
     .content{
       width: 100%;
-      padding: 20px;
+      padding: 40px;
     }
-
-    
-
- 
   }
